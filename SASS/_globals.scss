@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+*,::before,::after{
+    box-sizing: inherit;   
+}
+body{
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    font-family: 'Be Vietnam', sans-serif;
+    color: $DarkBlue;
+    
+}
+p{
+    color: $DarkGrayishBlue;
+}
+ul{
+    list-style: none;
+}
+.flex{
+    display: flex;
+    &_jc_between{
+        justify-content: space-between;
+    }
+    &_jc_around{
+        justify-content: space-around;
+    }
+    &_jc_center{
+        justify-content: center;
+    }
+    &_align_center{
+        align-items: center;
+    }
+}
+.btn{
+    font-size: 0.8rem;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: $BrightRed;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: $VeryPaleRed;
+}
+.container{
+    padding-left: 13rem;
+    padding-right: 13rem;
+    padding-bottom: 6.5rem;
+    padding-top: 3rem;
+}
+.helper{
+    padding-left: 13rem;
+    padding-right: 13rem;
+}
+h2{
+    font-size: 2rem;
+}
+.wrapper{
+    flex-wrap: wrap;
+}
+.fd_column{
+    flex-direction: column;
+    &_row{
+        flex-direction: row;
+    }
+}

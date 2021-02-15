@@ -1,0 +1,16 @@
+.home_section{
+   position: relative;
+   .home_image{
+      
+      img{
+          width: 100%;
+      }
+   }
+}
+#homesvg{
+    position: fixed;
+    right: -10vw;
+    top: -25vh;
+    z-index: -1;
+}
+

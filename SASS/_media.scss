@@ -1,0 +1,147 @@
+// menu nav
+@media screen and (max-width:1128px){
+    nav{
+        .burger{
+            display: block;
+        }
+    }
+    .btngetstarted{
+        display: none;
+    }
+    .nav_menu{
+        position: absolute;
+        top: -100%;
+        left: 1.5rem;
+        height: auto;
+        padding: 25px;
+        background-color: $VeryLightGray;
+        flex-direction: column;
+        width: 90%;
+        text-align: center;
+        transition: 0.3s ease;
+        z-index: 1;
+        .nav_link:not(:last-child){
+            margin-bottom: 15px;
+        }
+    }
+    .show_nav{
+        top: 10%;
+    }
+
+}
+@media screen and (max-width:1324px){
+    .home_section{
+        flex-direction: column-reverse;
+    }
+    .about_section{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:987px){
+    .container{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 6.5rem;
+        padding-top: 3rem;
+    }
+    .helper{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .home_section{
+        text-align: center;
+    }
+    .about_section{
+        align-items: center;
+        
+    }
+}
+@media screen and (max-width:584px){
+    .banner{
+        flex-direction: column;
+    }
+}
+// home
+@media screen and (max-width:584px){
+    .banner{
+        flex-direction: column;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    .home_image{
+        img{
+            width: 100%;
+            height: 100%;
+        }
+     }
+}
+@media screen and (max-width:508px){
+    .slider{
+        
+
+            &::-webkit-scrollbar {
+            display: none;
+            }
+            
+    }
+    .slide{
+        background-color: $VeryLightGray;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        padding: 15px;
+        &:not(:last-child){
+            margin-right: 15px;
+        }
+        .slide_pic{
+            img{
+                width: 90px;
+                height: 90px;
+                margin-top: -10%;
+            }
+        }
+        .desc{
+            text-align: center;
+        }
+    }
+    
+    
+    .slider_wrapper{
+       
+        width: 400%;
+        position: absolute;
+    }
+    .dots{
+        .dot{
+            display: block;
+            &:not(:last-child){
+                margin-right: 20px;
+            }
+        }
+    
+    }
+}
+
+// footer
+@media screen and (max-width:758px){
+    .footer{
+        flex-direction: column-reverse;
+    }
+    .left_footer{
+        flex-direction: column-reverse;
+        align-items: center;
+        .social{
+            i{
+                font-size: 2.5rem;
+                margin: 15px;
+            }
+        }
+    }
+    .right_footer{
+        input{
+            width: 50%;
+        }
+    }
+}

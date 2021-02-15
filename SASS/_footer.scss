@@ -1,0 +1,51 @@
+footer{
+    line-height: 1.7;
+    color: $DarkGrayishBlue;
+    position: relative;
+    .footer{
+        background-color: $VeryDarkBlue;
+        position: relative;
+        input,button{
+            border-radius: 30px;
+            outline: none;
+            padding: 18px 10px;
+            height: 50px;
+        }
+        button{
+            width: 80px;
+            background-color: $BrightRed;
+            color: $VeryLightGray;
+            font-weight: 600;
+            outline: none;
+            border: none;
+            
+        }
+    }
+}
+.footer>*{
+    flex-basis: 32%;
+}
+.mid_footer>*{
+    flex-basis: 50%;
+}
+.left_footer{
+    flex-direction: column;
+    .social{
+        i{
+            font-size: 1.4rem;
+            margin: 10px;
+            color: $VeryLightGray;
+            
+        }
+    }
+}
+.right_footer{
+    display: flex;
+    justify-content: center;
+}
+.copy{
+    text-align: center;
+    background-color: $VeryDarkBlue;
+    padding: 10px;
+}
+

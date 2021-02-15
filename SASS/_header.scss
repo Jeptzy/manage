@@ -1,0 +1,44 @@
+nav{
+        height: 4rem;
+        
+    .burger{
+        cursor: pointer;
+        display: none;
+        .line1,.line2,.line3{
+            width: 27px;
+            height: 3px;
+            background-color: $DarkBlue;
+            transition: 0.3s linear;
+            &:not(:last-child){
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+.nav_link{
+    &:not(:last-child){
+        margin-right: 16px;
+       
+    }
+    a{
+        font-weight: 800;
+        color: $DarkBlue;
+        text-decoration: none;
+        &:hover{
+            color: $DarkGrayishBlue;
+        }
+    }
+}
+
+h1{
+    font-size: 3.2rem;
+}
+.lineclose .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.lineclose .line2{
+    opacity: 0;
+}
+.lineclose .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
